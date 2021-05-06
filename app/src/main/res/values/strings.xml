@@ -1,4 +1,32 @@
 <resources>
     <string name="app_name">Med_TracK</string>
     <string name="about_app">Med_TracK, a one stop solution for all health problems. The app is designed to facilitate both patients and doctors. With just a click, one can consult a doctor, get a prescription in accordance with their symptoms which is tracked using the Medibox and maintain their digital health records.  Doctors can register on this app and provide safe and hassle free consultation, thereby minimizing the grave risk of getting infected. This app is truly the innovation we need during these troubled times.</string>
+    <string name="doctor_guide">
+        To send prescription:- \n
+        > Go to Your Appointments. \n
+        > Click on symptoms to view the symptoms. \n
+        > Click on send prescription button. \n
+        > Fill the prescribed details. Give a meeting link if requested. \n
+        > Click on send. \n
+        \n To view patient profile:- \n
+        > Go to Your Appointments. \n
+        > Click on name of patient. \n
+    </string>
+    <string name="patient_guide">
+        To consult a doctor:- \n
+        > Go to Home. \n
+        > Click on consult doctors. \n
+        > Choose a doctor and click on start appointment. \n
+        > Enter your body parameters. Leave if not known.  \n
+        > Click on next button. \n
+        > Mark your symptoms. Select audio or video call if required. \n
+        > Click on request for prescription. \n
+        \n The appointment request is sent and once the doctor sends the prescription you can view it as follows : \n
+        > Go to Home. \n
+        > Click on your appointments. \n
+        > Click on prescription of the required appointment. \n
+        \n To view doctors profile:- \n
+        > Go to consult doctors. \n
+        > Click on View Profile of required doctor.
+    </string>
 </resources>

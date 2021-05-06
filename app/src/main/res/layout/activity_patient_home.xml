@@ -132,7 +132,7 @@
                     android:layout_height="75dp"
                     android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/scan"
+                    android:src="@drawable/information"
                     android:id="@+id/scan_icon"
                     android:layout_gravity="center_horizontal"/>
                 <TextView
@@ -142,7 +142,7 @@
                     android:textAlignment="center"
                     android:textColor="#ffffff"
                     android:padding="3dp"
-                    android:text="Connect to Virtual MediBox"
+                    android:text="Help!"
                     android:gravity="center_horizontal" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>

@@ -73,17 +73,14 @@ public class PatientHome extends AppCompatActivity {
                 Intent intent= new Intent(PatientHome.this,Help.class);
                 intent.putExtra("curUser","Patients");
                 startActivity(intent);
-                //Toast.makeText(PatientHome.this,"Help!",Toast.LENGTH_SHORT).show();
                 break;
             }
             case R.id.pat_contact_us:{
                 startActivity(new Intent(PatientHome.this,ContactUs.class));
-                //Toast.makeText(PatientHome.this,"Contact us",Toast.LENGTH_SHORT).show();
                 break;
             }
             case R.id.pat_edit_profile:{
                 startActivity(new Intent(PatientHome.this,EditPatientProfile.class));
-                //Toast.makeText(PatientHome.this,"Edit profile",Toast.LENGTH_SHORT).show();
                 break;
             }
         }
@@ -94,21 +91,19 @@ public class PatientHome extends AppCompatActivity {
         startActivity(intent);
     }
     public void startScanQRcode(View view){
-        Intent intent = new Intent(PatientHome.this,QRCodeScanner.class);
-        intent.putExtra("entMan","NO");
-        intent.putExtra("To","null");
-        intent.putExtra("ToAuthId","null");
+        Intent intent = new Intent(PatientHome.this,Help.class);
+//        intent.putExtra("entMan","NO");
+//        intent.putExtra("To","null");
+//        intent.putExtra("ToAuthId","null");
         startActivity(intent);
     }
     public void startListAppointments(View view){
         Intent intent = new Intent(PatientHome.this,ListAppointment.class);
         startActivity(intent);
-        //Toast.makeText(PatientHome.this,"Appointments",Toast.LENGTH_SHORT).show();
     }
     public void viewMyProfile(View view){
         Intent intent = new Intent(PatientHome.this,PatientProfile.class);
         intent.putExtra("authId",mAuth.getUid());
         startActivity(intent);
-        //Toast.makeText(PatientHome.this,"My Profile",Toast.LENGTH_SHORT).show();
     }
 }

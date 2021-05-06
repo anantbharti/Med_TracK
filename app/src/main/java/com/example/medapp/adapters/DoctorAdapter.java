@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.medapp.AppointmentActivity;
 import com.example.medapp.DoctorProfile;
+import com.example.medapp.EnterManually;
 import com.example.medapp.QRCodeScanner;
 import com.example.medapp.R;
 import com.example.medapp.models.Doctor;
@@ -37,7 +38,7 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter <Doctor,DoctorAdapter
         holder.startAppointment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(context, QRCodeScanner.class);
+                Intent intent=new Intent(context, EnterManually.class);
                 intent.putExtra("To",model.getName());
                 intent.putExtra("ToAuthId",model.getAuthId());
                 intent.putExtra("entMan","YES");
