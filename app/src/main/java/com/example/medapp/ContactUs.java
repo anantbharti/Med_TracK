@@ -51,7 +51,7 @@ public class ContactUs extends AppCompatActivity {
         webAnant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://gqs87vfph7rk90tmbbcwia-on.drv.tw/www.anant.ml/Homepage.html");
+                Uri uri = Uri.parse("https://anant--bharti.web.app/");
                 startActivity(new Intent(Intent.ACTION_VIEW,uri));
             }
         });
@@ -93,7 +93,7 @@ public class ContactUs extends AppCompatActivity {
         webGourav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://q4gaha7wghudomzmwqcv6w-on.drv.tw/www.portfolio.com/Portfolio/Portfolio.html#contact");
+                Uri uri = Uri.parse("https://gourav-jsr.netlify.app/");
                 startActivity(new Intent(Intent.ACTION_VIEW,uri));
             }
         });
