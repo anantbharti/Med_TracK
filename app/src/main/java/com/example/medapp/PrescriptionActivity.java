@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.app.ProgressDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +34,7 @@ public class PrescriptionActivity extends AppCompatActivity {
     DatabaseReference reference,mRef;
     Prescription prescription;
     Doctor doctor;
+    ImageView linkCopyBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,6 +81,16 @@ public class PrescriptionActivity extends AppCompatActivity {
                 }
             });
 
+            linkCopyBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager clipboardManager= (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                    ClipData clipData=ClipData.newPlainText("Link",presVideoCallLink.getText().toString());
+                    clipboardManager.setPrimaryClip(clipData);
+                    Toast.makeText(PrescriptionActivity.this,"Link copied",Toast.LENGTH_SHORT).show();
+                }
+            });
+
     }
     private void setUpPresView(){
         presMedicines=findViewById(R.id.pres_medicines);
@@ -87,5 +102,6 @@ public class PrescriptionActivity extends AppCompatActivity {
         callTime=findViewById(R.id.pres_call_time_card);
         callLink=findViewById(R.id.pres_video_call_link_card);
         prescriptionText=findViewById(R.id.pres_text);
+        linkCopyBtn=findViewById(R.id.link_copy_btn);
     }
 }
